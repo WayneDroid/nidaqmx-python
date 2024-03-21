@@ -32,6 +32,7 @@ sys.path.insert(0, os.path.abspath('../'))
 # ones.
 extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.coverage',
+              "sphinx.ext.intersphinx",
               'sphinx.ext.viewcode',
               'sphinx.ext.napoleon']
 
@@ -80,6 +81,10 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
+intersphinx_mapping = {
+    "nidaqmx": ("https://nidaqmx-python.readthedocs.io/en/stable/", None),
+    "python": ("https://docs.python.org/3", None),
+}
 
 # -- Options for HTML output ----------------------------------------------
 
